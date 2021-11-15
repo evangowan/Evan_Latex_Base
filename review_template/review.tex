@@ -1,0 +1,142 @@
+%\documentclass[review,authoryear]{elsarticle}
+%\documentclass[12p,twoside,english]{report}
+\documentclass[12p,twoside,english]{article}
+\usepackage[verbose,tmargin=2cm,bmargin=2cm,lmargin=4cm,rmargin=2cm,a4paper]{geometry}
+%\geometry[]
+
+%\documentclass[review,authoryear]{book}
+
+% this gets rid of the "preprint submitted to Elsevier" footer
+%\makeatletter
+%\def\ps@pprintTitle{%
+% \let\@oddhead\@empty
+% \let\@evenhead\@empty
+% \def\@oddfoot{\centerline{\thepage}}%
+% \let\@evenfoot\@oddfoot}
+%\makeatother
+
+%\setlength{\footskip}{50pt}
+
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{supertabular}
+\usepackage[table,x11names]{xcolor}
+\usepackage{graphicx}
+\usepackage{subfig}
+%\usepackage{afterpage}
+%\usepackage[breaklinks,colorlinks=false]{hyperref}
+%\usepackage{chngcntr}
+%\usepackage{tocloft}
+\usepackage{textcomp}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pdflscape}
+
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
+%\usepackage{subcaption}
+
+%\usepackage{sidecap}
+
+
+\captionsetup[subfloat]{position=top,justification=raggedright,singlelinecheck=off}
+%\usepackage{lineno}
+%\linenumbers
+
+
+% gnumeric preamble stuff
+
+\usepackage[latin1]{inputenc}                                 %%
+\usepackage{color}                                            %%
+%%    \usepackage{array}                                            %%
+\usepackage{longtable}                                        %%
+\usepackage{calc}                                             %%
+\usepackage{multirow}                                         %%
+\usepackage{hhline}                                           %%
+\usepackage{ifthen}  
+
+    \renewcommand{\bibname}{References}
+
+\def\inputGnumericTable{} 
+
+\setlength{\textheight}{23cm}
+
+
+\bibliographystyle{model2-names.bst}
+%\biboptions{authoryear}
+%\counterwithin{figure}{section}
+%\counterwithin{equation}{section}
+
+%\renewcommand{\cftfigpresnum}{\figurename\enspace}
+%\renewcommand{\cftfigaftersnum}{:}
+%\settowidth{\mylen}{\cftfigpresnum\cftfigaftersnum}
+%\addtolength{\cftfignumwidth}{\mylen}
+
+
+%\usepackage[icelandic]{babel}
+%\usepackage[T1]{fontenc}
+
+% first line indent after the first paragraph of a section
+\setlength{\parindent}{0em}
+
+% spacing between paragraphs
+\setlength{\parskip}{1em}
+
+\onehalfspace
+%\doublespace
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+%\newcolumntype{V}{>{\centering\arraybackslash} m{.5\linewidth} }
+
+%\captionsetup[subfloat]{justification=raggedright,singlelinecheck=false}
+
+\hyphenation{Laur-en-tide Wis-con-sin-an}
+
+
+\begin{document}
+
+
+\author{AUTHOR NAME \vspace{-0.9cm}}
+
+
+\title{\vspace{-3cm} \singlespace TITLE   \vspace{-0.5cm}}
+%\subtitle{ }
+\date{\vspace{-0.5cm} \url{email.address.com}}
+
+
+\maketitle
+
+
+\vspace{-0.5cm}
+
+
+
+\section{SECTION}
+
+
+
+
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=0.95\textwidth]{figure.pdf}
+%\caption*{ }
+%\label{fig:}
+%\end{figure}
+
+%\section*{References}
+
+\bibliography{review}
+
+
+\end{document}
